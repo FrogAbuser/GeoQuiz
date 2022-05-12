@@ -41,7 +41,8 @@ function populate() {
     else {
         // show question
         var element = document.getElementById("question");
-        element.innerHTML = quiz.getQuestionIndex().text;
+        element.innerHTML = quiz.getQuestionIndex().img + quiz.getQuestionIndex().text;
+        
 
         // show options
         var choices = quiz.getQuestionIndex().choices;
@@ -84,36 +85,36 @@ function showScores() {
 
 // create questions here
 var questions = [
-    new Question("What’s the capital of Russia?", ["Moscow", "Berlin", "Warsaw", "Kiev"], "Moscow", '<img scr="1.png">'),
-    new Question("How many continents there are?", ["2", "4", "7", "12"], "7"),
-    new Question("Which country is not in Asia?", ["Japan", "China", "India", "Mexico"], "Mexico"),
-    new Question("In which country has the longest river?", ["Egypt", "U.S.A", "India", "Chile"], "Egypt"),
-    new Question("How many oceans north America is in contact with?", ["2", "3", "4", "5"], "2"),
-    new Question("What’s the name of the country in the picture?", ["Germany", "Italy", "Spain", "Australia"], "Germany"),
-    new Question("What's the capital of Ireland?", ["Belfast", "Tyrone", "London", "Dublin"], "Dublin"),
-    new Question("What's the capital of Kenya?", ["Kikiyu", "Mombasa", "Nairobi", "Italy"], "Nairobi"),
-    new Question("What's the capital of Somalia?", ["London", "Rio de janeiro", "Germany", "Mogadishu"], "Mogadishu"),
-    new Question("What's the capital of Chad?", ["N'Djamena", "Spain", "Australia", "Tirana"], "N'Djamena"),
-    new Question("What's the capital of Saudi Arabia?", ["N'Djamen", "Dubai", "Riyadh", "Abuja"], "Dubai"),
-    new Question("What's the capital of Afganistan?", ["Zagreb", "Dubai", "Riyadh", "Kabul"], "Kabul"),
-    new Question("What's the capital of Greece?", ["Athens", "Algiers", "Rome", "Germany"], "Athens"),
-    new Question("What's the capital of Italy?", ["Managua", "Rome", "N'Djamen", "Athens"], "Rome"),
-    new Question("What's the capital of France?", ["Spain", "Rio de janeiro", "Paris", "Wellington"], "Paris"),
-    new Question("What's the capital of Brasil?", ["Riyadh", "Mogadishu", "Rio de janeiro", "Rome"], "Rio de janeiro"),
-    new Question("Where can you find Nile?", ["North America", "South America", "Africa", "Asia"], "Africa"),
-    new Question("Where can you find Amazon River?", ["Asia", "North America", "South America", "Africa"], "South America"),
-    new Question("Where can you find Yangtze River?", ["Africa", "Asia", "North America", "South America"], "Asia"),
-    new Question("Where can you find Mississippi River?", ["South America", "Africa", "Asia", "North America"], "North America"),
-    new Question("What's the name of the tallest mountain?", ["K2", "Mount Everest", "Lhotse", "Manaslu"], "Mount Everest"),
-    new Question("Which is not an ocean?", ["Atlantic", "Pacific", "Indian", "Baltic"], "Balitc"),
-    new Question("Which city is not in Australia?", ["New York", "Sydney", "Melbourne", "Perth"], "New York"),
-    new Question("Which city is not in Chile?", ["Santiago", "Valparasio", "Nairobi", "Arica"], "Nairobi"),
-    new Question("Which sea is the largest?", ["Philippine", "Coral", "Caribbean", "South China"], "Philippine"),
-    new Question("What is the tallest hill in the world?", ["Denali", "Cavanal Hill", "Everest", "Arthurs' Seat"], "Cavanal Hill"),
-    new Question("What is the deepest depression on earth?", ["The Mariana Trench", "Great Depression", "Major Depression", "Chronic Depression"], "The Mariana Trench"),
-    new Question("Which is not a name of a Canyon?", ["Black", "Chaco", "Grand", "Matt"], "Matt"),
-    new Question("What is the biggest volcano in the world?", ["Ojos del Salado", "Tipas", "Ojos Hermanos", "Incahuasi"], "Ojos del Salado"),
-    new Question("What is the largest lake in the world?", ["Michigan", "Superior", "Caspian Sea", "Victoria"], "Caspian Sea")
+    new Question("What’s the capital of Russia?", ["Moscow", "Berlin", "Warsaw", "Kiev"], "Moscow", '<img src="images/1.png" width="300" height="150" alt="Russia"><p></p>'),
+    new Question("How many continents there are?", ["2", "4", "7", "12"], "7", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("Which country is not in Asia?", ["Japan", "China", "India", "Mexico"], "Mexico", '<img src="images/16.png" width="300" height="150"><p></p>'),
+    new Question("In which country has the longest river?", ["Egypt", "U.S.A", "India", "Chile"], "Egypt", '<img src="images/17.jpg" width="300" height="150"><p></p>'),
+    new Question("How many oceans north America is in contact with?", ["2", "3", "4", "5"], "2", '<img src="images/2.png" width="300" height="150"><p></p>'),
+    new Question("What’s the name of the country in the picture?", ["Germany", "Italy", "Spain", "Australia"], "Germany", '<img src="images/3.jpg" width="300" height="150"><p></p>'),
+    new Question("What's the capital of Ireland?", ["Belfast", "Tyrone", "London", "Dublin"], "Dublin", '<img src="images/4.png" width="300" height="150"><p></p>'),
+    new Question("What's the capital of Kenya?", ["Kikiyu", "Mombasa", "Nairobi", "Italy"], "Nairobi", '<img src="images/5.png" width="300" height="150"><p></p>'),
+    new Question("What's the capital of Somalia?", ["London", "Rio de janeiro", "Germany", "Mogadishu"], "Mogadishu", '<img src="images/6.jpg" width="300" height="150"><p></p>'),
+    new Question("What's the capital of Chad?", ["N'Djamena", "Spain", "Australia", "Tirana"], "N'Djamena", '<img src="images/7.jpg" width="300" height="150"><p></p>'),
+    new Question("What's the capital of Saudi Arabia?", ["N'Djamen", "Dubai", "Riyadh", "Abuja"], "Riyadh", '<img src="images/8.jpg" width="300" height="150"><p></p>'),
+    new Question("What's the capital of Afganistan?", ["Zagreb", "Dubai", "Riyadh", "Kabul"], "Kabul", '<img src="images/9.png" width="300" height="150"><p></p>'),
+    new Question("What's the capital of Greece?", ["Athens", "Algiers", "Rome", "Germany"], "Athens", '<img src="images/10.png" width="300" height="150"><p></p>'),
+    new Question("What's the capital of Italy?", ["Managua", "Rome", "N'Djamen", "Athens"], "Rome", '<img src="images/11.png" width="300" height="150"><p></p>'),
+    new Question("What's the capital of France?", ["Spain", "Rio de janeiro", "Paris", "Wellington"], "Paris", '<img src="images/12.png" width="300" height="150"><p></p>'),
+    new Question("What's the capital of Brasil?", ["Riyadh", "Brasilia", "Rio de janeiro", "Rome"], "Brasilia", '<img src="images/13.png" width="300" height="150"><p></p>'),
+    new Question("Where can you find Nile?", ["North America", "South America", "Africa", "Asia"], "Africa", '<img src="images/17.jpg" width="300" height="150"><p></p>'),
+    new Question("Where can you find Amazon River?", ["Asia", "North America", "South America", "Africa"], "South America", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("Where can you find Yangtze River?", ["Africa", "Asia", "North America", "South America"], "Asia", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("Where can you find Mississippi River?", ["South America", "Africa", "Asia", "North America"], "North America", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("What's the name of the tallest mountain?", ["K2", "Mount Everest", "Lhotse", "Manaslu"], "Mount Everest", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("Which is not an ocean?", ["Atlantic", "Pacific", "Indian", "Baltic"], "Balitc", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("Which city is not in Australia?", ["New York", "Sydney", "Melbourne", "Perth"], "New York", '<img src="images/14.png" width="300" height="150"><p></p>'),
+    new Question("Which city is not in Chile?", ["Santiago", "Valparasio", "Nairobi", "Arica"], "Nairobi", '<img src="images/15.jpg" width="300" height="150"><p></p>'),
+    new Question("Which sea is the largest?", ["Philippine", "Coral", "Caribbean", "South China"], "Philippine", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("What is the tallest hill in the world?", ["Denali", "Cavanal Hill", "Everest", "Arthurs' Seat"], "Cavanal Hill", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("What is the deepest depression on earth?", ["The Mariana Trench", "Great Depression", "Major Depression", "Chronic Depression"], "The Mariana Trench", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("Which is not a name of a Canyon?", ["Black", "Chaco", "Grand", "Matt"], "Matt", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("What is the biggest volcano in the world?", ["Ojos del Salado", "Tipas", "Ojos Hermanos", "Incahuasi"], "Ojos del Salado", '<img src="images/0.png" width="300" height="150"><p></p>'),
+    new Question("What is the largest lake in the world?", ["Michigan", "Superior", "Caspian Sea", "Victoria"], "Caspian Sea", '<img src="images/0.png" width="300" height="150"><p></p>')
 ];
 
 var element = document.getElementById("quiz");
