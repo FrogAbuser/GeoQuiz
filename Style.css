@@ -1,0 +1,116 @@
+﻿body {
+    background-color: deepskyblue ;
+}
+p {
+    font-family: Arial;
+    color: white;
+    font-size: 15px;
+    text-align: right;
+    margin: 0 auto;
+}
+header {
+    width: 130px;
+    font-family: Arial;
+    color: white;
+    font-size: 30px;
+    border: 5px solid white;
+    text-align: left;
+}
+.text1 {
+    height: 560px;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    background-color: forestgreen;
+    text-align: left;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
+    float: left;
+}
+    .text1 p {
+        text-align: left;
+        font-size: 20px;
+    }
+.text2 {
+    height: 560px;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    background-color: forestgreen;
+    text-align: left;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 10px 10px 100px;
+    float: left;
+}
+    .text2 p {
+        text-align: left;
+}
+.grid {
+    width: 600px;
+    height: 500px;
+    margin: 0px 0px 0px 110px;
+    background-color: forestgreen;
+    padding: 10px 50px 50px 50px;
+    float: left;
+}
+
+    .grid h1 {
+        font-family: Arial;
+        font-size: 60px;
+        text-align: center;
+        color: white;
+    }
+
+    #button_start, #button_again {
+        background-color: deepskyblue;
+        width: 250px;
+        font-size: 20px;
+        color: white;
+        margin: 150px 40px 10px 170px;
+        padding: 10px 10px;
+     
+    }
+
+#score {
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid #question {
+    font-family: Arial;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: deepskyblue;
+    width: 250px;
+    font-size: 20px;
+    color: white;
+    margin: 10px 40px 10px 8px;
+    padding: 10px 10px;
+}
+
+    #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+        cursor: pointer;
+        background-color: gray;
+    }
+
+    #btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+        outline: 0;
+    }
+
+#progress {
+    font-family: Arial;
+    color: white;
+    font-size: 18px;
+}
