@@ -115,7 +115,7 @@ function showProgress() {
     element.innerHTML = "Question " + currentQueryNumber + "/" + 10;
 };
 
-//deals with the end screep
+//deals with the end screen
 function showScores() {
     //shows the restart button
     button_again.style.display = 'block'
@@ -125,7 +125,10 @@ function showScores() {
     gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "/10 " + procentage + "%</h2>";
     //shows only when the score is above 75%
     if (75 < procentage) {
-        gameOverHTML += "<p><b>Congratulations!</b> You scored above 75%!</p><p>Why won't you share the score with your friends?</p>";
+        gameOverHTML += "<p><b>Congratulations!</b> You scored above 75%! Why won't you share the score with your friends?</p>";
+        gameOverHTML += "<a href='https://www.facebook.com/sharer.php?u=https://frogabuser.github.io/GeoQuiz/'>Facebook</a> "
+        gameOverHTML += "<a href='https://twitter.com/intent/tweet?url=https://frogabuser.github.io/GeoQuiz/&text='>Twitter</a> "
+        gameOverHTML += "<a href='http://vk.com/share.php?url=https://frogabuser.github.io/GeoQuiz&title=GeoQuiz&comment='>VK</a> "
     }
     //prints the end screen
     var element = document.getElementById("questions_grid");
