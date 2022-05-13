@@ -1,6 +1,9 @@
-﻿body {
+﻿/*background colour*/
+body {
     background-color: deepskyblue ;
 }
+
+/*qoute style*/
 p {
     font-family: Arial;
     color: white;
@@ -8,6 +11,8 @@ p {
     text-align: right;
     margin: 0 auto;
 }
+
+/*logo*/
 header {
     width: 130px;
     font-family: Arial;
@@ -16,6 +21,8 @@ header {
     border: 5px solid white;
     text-align: left;
 }
+
+/*text box on the left*/
 .text1 {
     height: 560px;
     font-family: Arial;
@@ -28,10 +35,14 @@ header {
     margin: 0px 10px 10px 10px;
     float: left;
 }
+
+/*heading*/
     .text1 p {
         text-align: left;
         font-size: 20px;
     }
+
+/*text box on the right*/
 .text2 {
     height: 560px;
     font-family: Arial;
@@ -44,10 +55,20 @@ header {
     margin: 0px 10px 10px 100px;
     float: left;
 }
+
+    /*heading*/
     .text2 p {
         text-align: left;
+        font-size: 20px;
+    }
+
+/*used to move socials to the bottom of the box*/
+.about_prog {
+    height: 500px;
 }
-.grid {
+
+/*midle box with the quiz*/
+.quiz_grid {
     width: 600px;
     height: 500px;
     margin: 0px 0px 0px 110px;
@@ -56,13 +77,15 @@ header {
     float: left;
 }
 
-    .grid h1 {
+    /*heading */
+    .quiz_grid h1 {
         font-family: Arial;
         font-size: 60px;
         text-align: center;
         color: white;
     }
 
+/*2 buttons*/
     #button_start, #button_again {
         background-color: deepskyblue;
         width: 250px;
@@ -80,18 +103,19 @@ header {
     font-size: 30px;
 }
 
-.grid #question {
+/*grid with questions and answers */
+.quiz_grid #query {
     font-family: Arial;
     font-size: 30px;
     color: white;
     text-align: center;
 }
 
-.buttons {
+.quiz_buttons {
     margin-top: 30px;
 }
 
-#btn0, #btn1, #btn2, #btn3 {
+#button_0, #button_1, #button_2, #button_3 {
     background-color: deepskyblue;
     width: 250px;
     font-size: 20px;
@@ -100,16 +124,14 @@ header {
     padding: 10px 10px;
 }
 
-    #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
-        cursor: pointer;
-        background-color: gray;
-    }
+/*colour change on hover*/
+#button_0:hover, #button_1:hover, #button_2:hover, #button_3:hover {
+    cursor: pointer;
+    background-color: darkgrey;
+}
 
-    #btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
-        outline: 0;
-    }
-
-#progress {
+/*counter for questions*/
+#query_num {
     font-family: Arial;
     color: white;
     font-size: 18px;

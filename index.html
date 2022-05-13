@@ -2,14 +2,16 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Quiz</title>
+    <title>GeoQuiz</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
+    <!--Top of the website-->
     <p>"Geography is destiny." ~ Abraham Verghese</p>
-    
     <header>Geo Quiz</header>
-    <hr style="margin-bottom: 20px">
+    <hr style="margin-bottom: 25px">
+
+    <!--Left handside box-->
     <div class="text1">
         <p><b>Geography</b></p>
         A branch of science concerned with the study of the Earth's and planets' territories, characteristics, populations, and phenomena. Geography is a broad field of study that aims to comprehend the Earth and its human and environmental complexities—not just where things are, but also how they have changed and evolved. Human geography and physical geography are two areas of geography that are frequently used to define it.Human geography is the study of people and their communities, cultures, economies, and interactions with the environment via the examination of their relationships with and across space and place.
@@ -17,38 +19,46 @@
         Geography has been referred to as "the world science" and "the link between the human and physical sciences."
     </div>
 
-    <div class="grid">
+    <!--Middle box-->
+    <div class="quiz_grid">
         <h1>Geography Quiz</h1>
-        <div id="quiz">
+        <!--Devider for questions-->
+        <div id="questions_grid">
 
-            <p id="question"></p>
+            <!--Quiz questions go here-->
+            <p id="query"></p>
 
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button>
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
+            <!--Quiz buttons-->
+            <div class="quiz_buttons">
+                <button id="button_0"><span id="answer_0"></span></button>
+                <button id="button_1"><span id="answer_1"></span></button>
+                <button id="button_2"><span id="answer_2"></span></button>
+                <button id="button_3"><span id="answer_3"></span></button>
             </div>
-
         </div>
+        <!--Buttons to start and restart-->
         <button id="button_start">Start</button>
         <button id="button_again">Again?</button>
     </div>
-
+    
+    <!--Right handside box-->
     <div class="text2">
-        <div id="about">
-            <p><b>About us</b></p>
-            <p>Our goal is to educate people on geography and its' importance. We are group of dedicated individuals with a deep passion for the topic. We would love to share our passion for the topic with you if you will let us. We belive that geography is a king of all sciences, but our opinion might be a little biased ;)</p>
+        <!--about and progress devider-->
+        <div class="about_prog">
+            <div id="about">
+                <p><b>About us</b></p>
+                <p>Our goal is to educate people on geography and its' importance. We are group of dedicated individuals with a deep passion for the topic. We would love to share our passion for the topic with you if you will let us. We belive that geography is a king of all sciences, but our opinion might be a little biased ;)</p>
+            </div>
+            <!--Progres counter-->
+            <p id="query_num">Question 0/10</p>
         </div>
-        <p id="progress">Question 0/10</p>
-        <hr style="margin-bottom: 20px">
-        <a href="www.facebook.com">Facebook</a>
-        <a href="www.twitter.com">Twitter</a>
-        <a href="www.vk.com">VK</a>
+        <!--Socials-->
+        <hr style="margin-bottom: 25px">
+        <a href="https://www.facebook.com/sharer.php?u=https://frogabuser.github.io/GeoQuiz/">Facebook</a>
+        <a href="https://twitter.com/intent/tweet?url=https://frogabuser.github.io/GeoQuiz/&text=">Twitter</a>
+        <a href="http://vk.com/share.php?url=https://frogabuser.github.io/GeoQuiz&title=GeoQuiz&comment=">VK</a>
     </div>
 
-
     <script src="JavaScript.js"></script>
-
 </body>
 </html>
